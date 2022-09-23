@@ -98,3 +98,4 @@ class Tabla:
                 for j in range(columnas):
                     print(" * ", end='')
 ```
+La prueba de codewars es la imagen adjunta.
