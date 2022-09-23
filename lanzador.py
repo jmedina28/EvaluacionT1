@@ -1,6 +1,6 @@
 
 
-def lanzador():  
+def iniciador():  
     seleccion = int(input("Introduzca el número de ejercicio que desea ejecutar: "))
     if seleccion == 1:
         from ejer1 import generador1, elemento
