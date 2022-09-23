@@ -14,5 +14,9 @@ def generador(opcion):
     for i in range(-20,1):
       if i % 2 != 0:
         lista.append(i)
+  elif opcion == 5:
+    for i in range(0,51,5):
+      lista.append(i)
   return(lista)
-print(generador(3))
+
+print(generador(5))
