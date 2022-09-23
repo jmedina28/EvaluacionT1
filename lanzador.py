@@ -19,7 +19,5 @@ def iniciador():
             opcion += 1
     elif seleccion == 4:
         from tabla import generador3
-        i = int(input("Introduzca el número de filas que desea que tenga su tabla: "))
-        j = int(input("Introduzca el número de columnas que desea que tenga su tabla: "))
-        print(generador3(i,j))
+        generador3()
         
