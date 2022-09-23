@@ -9,16 +9,15 @@ def generador1(dim):
    else:
      matriz.append([])
      generador1(dim-1)
-f = 0
+f = 1
 def elemento(matriz,f):
     if len(matriz) == 0:
         return
     else:
-        f += 1
         print("Introduzca los elementos de la fila" , f)
         for i in range(3):
             matriz[fila].append(int(input("Introduzca un elemento: ")))
-        elemento(matriz[1:],f)
+        elemento(matriz[1:],f+1)
 
 def suma(matriz):
     if len(matriz) == 0:
