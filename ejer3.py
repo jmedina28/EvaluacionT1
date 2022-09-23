@@ -7,5 +7,9 @@ def generador(opcion):
   elif opcion  == 2:
     for i in range(-10,1):
       lista.append(i)
+  elif opcion == 3:
+    for i in range(-20,1):
+      if i % 2 != 0:
+        lista.append(i)
   return(lista)
-print(generador(2))
+print(generador(3))
