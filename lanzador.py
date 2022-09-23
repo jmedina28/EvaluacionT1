@@ -1,15 +1,10 @@
 
 
+
 def iniciador():  
     seleccion = int(input("Introduzca el número de ejercicio que desea ejecutar: "))
     if seleccion == 1:
-        from ejer1 import generador1, elemento
-        matriz = []
-        fila = 0
-        dimensiones = int(input("Introduzca el número de filas que desea que tenga su matriz ix4: "))
-        generador1(dimensiones)
-        elemento(matriz)
-        print(matriz)
+        import ejer1
     elif seleccion == 2:
         from ejer2 import comprobacion
         cadena = input("Introduzca una frase: ")
@@ -22,3 +17,9 @@ def iniciador():
         for i in range(5):
             print("Opción", opcion, ":", generador2(opcion))
             opcion += 1
+    elif seleccion == 4:
+        from tabla import generador3
+        i = int(input("Introduzca el número de filas que desea que tenga su tabla: "))
+        j = int(input("Introduzca el número de columnas que desea que tenga su tabla: "))
+        print(generador3(i,j))
+        
