@@ -10,8 +10,6 @@ def generador1(dim):
      matriz.append([])
      generador1(dim-1)
 
-generador1(dimensiones)
-
 def elemento(matriz):
     if len(matriz) == 0:
         return
@@ -19,5 +17,14 @@ def elemento(matriz):
         for i in range(3):
             matriz[fila].append(random.randint(0,10))
         elemento(matriz[1:])
+
+def suma(matriz):
+    if len(matriz) == 0:
+        return
+    else:
+        matriz[fila].append(matriz[fila][0] + matriz[fila][1] + matriz[fila][2])
+        suma(matriz[1:])
+generador1(dimensiones)
 elemento(matriz)
+suma(matriz)
 print(matriz)
