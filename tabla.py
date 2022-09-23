@@ -5,7 +5,7 @@ def generador3():
     columnas = int(input("Introduzca el número de columnas que desea que tenga su tabla: "))
 
     if filas < 1 or filas > 9 or columnas < 1 or columnas > 9:
-        print("Filas o columnas incorrectos")
+        print("Filas o columnas incorrectas")
     else:
         for i in range(filas):
             print("")
