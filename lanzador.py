@@ -16,3 +16,9 @@ def iniciador():
         lista = list(cadena)
         print(lista)
         print(comprobacion(lista))
+    elif seleccion == 3:
+        from ejer3 import generador2
+        opcion = 1
+        for i in range(5):
+            print("Opción", opcion, ":", generador2(opcion))
+            opcion += 1
