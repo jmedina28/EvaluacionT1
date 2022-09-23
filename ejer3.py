@@ -1,5 +1,5 @@
 
-def generador(opcion):
+def generador2(opcion):
   lista = []
   if opcion == 1:
     for i in range(11):
@@ -19,4 +19,4 @@ def generador(opcion):
       lista.append(i)
   return(lista)
 
-print(generador(5))
+print(generador2(5))

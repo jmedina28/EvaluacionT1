@@ -4,7 +4,7 @@ matriz = []
 fila = 0
 dimensiones = int(input("Introduzca el número de filas que desea que tenga su matriz ix4: "))
 
-def generador(dim):
+def generador1(dim):
   
   for i in range(dim):
     matriz.append([])
@@ -16,6 +16,6 @@ def elemento(m):
   for p in range(dimensiones):
     m[p].append(sum(m[p]))
    
-generador(dimensiones)
+generador1(dimensiones)
 elemento(matriz)
 print(matriz)
