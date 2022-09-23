@@ -10,3 +10,9 @@ def iniciador():
         generador1(dimensiones)
         elemento(matriz)
         print(matriz)
+    elif seleccion == 2:
+        from ejer2 import comprobacion
+        cadena = input("Introduzca una frase: ")
+        lista = list(cadena)
+        print(lista)
+        print(comprobacion(lista))
