@@ -11,12 +11,12 @@ def iniciador():
         print(lista)
         print(Cadena.comprobacion(lista))
     elif seleccion == 3:
-        from ejercicios.ejer3 import lista010, lista100, listapar20, listaimpar20, lista5
-        print(lista010(0, []))
-        print(lista100(-10, []))
-        print(listapar20(0, []))
-        print(listaimpar20(-20, []))
-        print(lista5(0, []))
+        from ejercicios.ejer3 import listas
+        print(listas(0,[],1,10))
+        print(listas(-10,[],1,0))
+        print(listas(0,[],2,20))
+        print(listas(-19,[],2,-1))
+        print(listas(0,[],5,50))
     elif seleccion == 4:
         from ejercicios.tabla import Tabla 
         Tabla.generador3()
