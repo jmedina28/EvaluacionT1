@@ -11,11 +11,12 @@ def iniciador():
         print(lista)
         print(Cadena.comprobacion(lista))
     elif seleccion == 3:
-        from ejercicios.ejer3 import Listas
-        opcion = 1
-        for i in range(5):
-            print("Opción", opcion, ":", Listas.generador2(opcion))
-            opcion += 1
+        from ejercicios.ejer3 import lista010, lista100, listapar20, listaimpar20, lista5
+        print(lista010(0, []))
+        print(lista100(-10, []))
+        print(listapar20(0, []))
+        print(listaimpar20(-20, []))
+        print(lista5(0, []))
     elif seleccion == 4:
         from ejercicios.tabla import Tabla 
         Tabla.generador3()

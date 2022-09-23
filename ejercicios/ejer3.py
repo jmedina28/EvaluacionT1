@@ -1,21 +1,36 @@
-class Listas:
-  def generador2(opcion):
-    lista = []
-    if opcion == 1:
-      for i in range(11):
-        lista.append(i)
-    elif opcion  == 2:
-      for i in range(-10,1):
-        lista.append(i)
-    elif opcion == 3:
-      for i in range(0,21,2):
-        lista.append(i)
-    elif opcion == 4:
-      for i in range(-20,1):
-        if i % 2 != 0:
-          lista.append(i)
-    elif opcion == 5:
-      for i in range(0,51,5):
-        lista.append(i)
+
+def lista010(n, lista):
+  lista.append(n)
+  if n < 10:
+    n += 1
+    lista010(n, lista)
     return lista
 
+def lista100(n, lista):
+  lista.append(n)
+  if n<0:
+    n += 1
+    lista100(n,lista)
+    return lista
+
+def listapar20(n, lista):
+  lista.append(n)
+  if n<20:
+    n +=2
+    listapar20(n,lista)
+    return lista
+
+
+def listaimpar20(n, lista):
+  lista.append(n)
+  if n<0:
+    n +=2
+    listaimpar20(n,lista)
+    return lista
+
+def lista5(n,lista):
+  lista.append(n)
+  if n<50:
+    n +=5
+    lista5(n,lista)
+    return lista
